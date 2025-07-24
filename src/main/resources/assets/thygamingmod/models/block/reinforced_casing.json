@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "createhollowpurple:block/reinf_casing/reinforced_casing",
+    "particle": "createhollowpurple:block/purnite/purnite_block"
+  }
+}

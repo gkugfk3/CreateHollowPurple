@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.gkugfk3.createhollowpurple.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "createhollowpurple.refmap.json",
+  "mixins": [],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

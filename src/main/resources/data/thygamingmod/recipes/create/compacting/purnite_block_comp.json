@@ -1,0 +1,37 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "createhollowpurple:purnite_ingot"
+    },
+    {
+      "item": "createhollowpurple:purnite_ingot"
+    },
+    {
+      "item": "createhollowpurple:purnite_ingot"
+    },
+    {
+      "item": "createhollowpurple:purnite_ingot"
+    },
+    {
+      "item": "thygamingmod:purnite_ingot"
+    },
+    {
+      "item": "thygamingmod:purnite_ingot"
+    },
+    {
+      "item": "thygamingmod:purnite_ingot"
+    },
+    {
+      "item": "thygamingmod:purnite_ingot"
+    },
+    {
+      "item": "thygamingmod:purnite_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "thygamingmod:purnite_block"
+    }
+  ]
+}

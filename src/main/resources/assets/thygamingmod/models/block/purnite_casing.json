@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "createhollowpurple:block/purnite/purnite_casing",
+    "emissive": "thygamingmod:block/purnite/purnite_casing_e"
+  },
+  "render_type": "cutout"
+}

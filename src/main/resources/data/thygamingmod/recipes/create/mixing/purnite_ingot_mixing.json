@@ -1,0 +1,33 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "create:brass_ingot"
+    },
+    {
+      "item": "create:brass_ingot"
+    },
+    {
+      "item": "create:brass_ingot"
+    },
+    {
+      "item": "create:brass_ingot"
+    },
+    {
+      "item": "minecraft:crying_obsidian"
+    }
+  ],
+  "results": [
+    {
+      "item": "createhollowpurple:purnite_ingot",
+      "count": 4
+    }
+  ],
+  "heatRequirement": "superheated"
+}

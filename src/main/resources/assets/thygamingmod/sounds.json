@@ -1,0 +1,101 @@
+{
+  "largedoormove": {
+    "category": "block",
+    "subtitle": "subtitles.largedoormove",
+    "sounds": [
+      {
+        "name": "createhollowpurple:4221494876",
+        "stream": false
+      }
+    ]
+  },
+  "doorslide": {
+    "category": "block",
+    "subtitle": "subtitles.doorslide",
+    "sounds": [
+      {
+        "name": "thygamingmod:3272349456",
+        "stream": false
+      }
+    ]
+  },
+  "absolute_disk": {
+    "category": "record",
+    "subtitle": "subtitles.absolute_disk",
+    "sounds": [
+      {
+        "name": "thygamingmod:absolute",
+        "stream": true
+      }
+    ]
+  },
+  "lockdown": {
+    "category": "record",
+    "subtitle": "subtitles.lockdown",
+    "sounds": [
+      {
+        "name": "thygamingmod:lockdown",
+        "stream": true
+      }
+    ]
+  },
+  "raid": {
+    "category": "record",
+    "subtitle": "subtitles.raid",
+    "sounds": [
+      {
+        "name": "thygamingmod:raid",
+        "stream": true
+      }
+    ]
+  },
+  "breach": {
+    "category": "record",
+    "subtitle": "subtitles.breach",
+    "sounds": [
+      {
+        "name": "thygamingmod:breach",
+        "stream": true
+      }
+    ]
+  },
+  "afterthelight": {
+    "category": "music",
+    "subtitle": "subtitles.afterthelight",
+    "sounds": [
+      {
+        "name": "thygamingmod:aft",
+        "stream": true
+      }
+    ]
+  },
+  "breachborealis": {
+    "category": "music",
+    "subtitle": "subtitles.breachborealis",
+    "sounds": [
+      {
+        "name": "thygamingmod:breach_bor",
+        "stream": true
+      }
+    ]
+  },
+  "reconstructing": {
+    "category": "music",
+    "subtitle": "subtitles.reconstructing",
+    "sounds": [
+      {
+        "name": "thygamingmod:reconst",
+        "stream": true
+      }
+    ]
+  },
+  "reflectionambient": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "thygamingmod:mod_reflection_ambient",
+        "stream": true
+      }
+    ]
+  }
+}

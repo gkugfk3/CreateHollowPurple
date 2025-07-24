@@ -1,0 +1,82 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+        maven { url = "https://maven.blamejared.com/" }
+        maven { url = "https://repo.tterrag.com/" }
+        maven { url = "https://modmaven.dev/" } // ✅ Add this for Create
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '[6.0,6.2)', changing: true
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.spongepowered.mixin'
+apply plugin: 'eclipse'
+
+group = 'com.gkugfk3.createhollowpurple'
+version = '40.3.0'
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+repositories {
+    maven {
+        name = 'MinecraftForge'
+        url = 'https://maven.minecraftforge.net'
+    }
+    maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+    maven { url = "https://maven.blamejared.com/" }
+    maven { url = "https://repo.tterrag.com/" }
+    maven { url = "https://modmaven.dev/" } // ✅ Add here too
+    maven { url = "https://cursemaven.com/" }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.18.2-40.3.0:universal'
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    // ✅ Use the correct version and artifact ID for Create 1.18.2
+    implementation fg.deobf("curse.maven:create-328085:5797603")
+    implementation fg.deobf("net.minecraftforge:forge:1.18.2-40.3.0")
+
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.18.2'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                createhollowpurple {
+                    source sourceSets.main
+                }
+            }
+        }
+        server {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                createhollowpurple {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+mixin {
+    add sourceSets.main, "createhollowpurple.refmap.json"
+    config "createhollowpurple.mixins.json"
+    env {
+        remapRefMap = true
+    }
+}

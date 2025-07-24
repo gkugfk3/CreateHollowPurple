@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT"
+
+[[mods]]
+modId="createhollowpurple"
+version="1.0.0"
+displayName="Create: Hollow Purple"
+authors="gkugfk3"
+description='''An experimental mod for ThyGaming with Mixin support.'''
+
+[[dependencies.thygamingmod]]
+modId="forge"
+mandatory=true
+versionRange="[40.3.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.thygamingmod]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.18.2,1.19)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.thygamingmod]]
+modId="create"
+mandatory=true
+versionRange="[0.5.0,0.6.0)"
+ordering="NONE"
+side="BOTH"

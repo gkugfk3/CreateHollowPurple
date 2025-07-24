@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "tag": "forge:stripped_logs"
+    },
+    {
+      "item": "createhollowpurple:purnite_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "createhollowpurple:purnite_casing"
+    }
+  ]
+}

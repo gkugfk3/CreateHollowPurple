@@ -1,0 +1,8 @@
+{
+  "parent": "block/water",
+  "textures": {
+    "particle": "createhollowpurple:fluid/purnite_still",
+    "still": "createhollowpurple:fluid/purnite_still",
+    "flowing": "createhollowpurple:fluid/purnite_flow"
+  }
+}

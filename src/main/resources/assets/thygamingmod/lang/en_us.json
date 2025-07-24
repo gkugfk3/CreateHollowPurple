@@ -1,0 +1,19 @@
+{
+  "subtitles.breach": "Breach alarm",
+  "subtitles.reconstructing": "Reconstructing More Science",
+  "subtitles.largedoormove": "Large door moves",
+  "subtitles.raid": "Raid alarm",
+  "subtitles.breachborealis": "Breach",
+  "subtitles.reflectionambient": "",
+  "subtitles.lockdown": "Lockdown alarm",
+  "subtitles.doorslide": "Door moving",
+  "subtitles.absolute_disk": "Absolute plays",
+  "subtitles.afterthelight": "After The Light",
+  "block.createhollowpurple.purnite_casing": "Purnite Casing",
+  "block.createhollowpurple.purnite_block": "Purnite Block",
+  "item.createhollowpurple.purnite_ingot": "Purnite Ingot",
+  "item.createhollowpurple.purnite_bucket": "Purnite Flux Bucket",
+  "fluid.createhollowpurple.purnite_flux": "Purnite Flux",
+  "block.createhollowpurple.reinforced_casing": "Reinforced Casing",
+  "itemGroup.tab_purple": "Create: Hollow Purple"
+}
