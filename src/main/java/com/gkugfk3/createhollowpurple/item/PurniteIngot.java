@@ -1,51 +1,38 @@
 package com.gkugfk3.createhollowpurple.item;
 
-import com.gkugfk3.createhollowpurple.block.ModBlocks;
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.event.entity.EntityJoinWorldEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.gkugfk3.createhollowpurple.CreativeTabs;
+import net.minecraftforge.event.entity.*;
+import net.minecraft.world.entity.item.*;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.item.*;
+import net.minecraftforge.eventbus.api.*;
+import org.apache.logging.log4j.*;
 
-import java.util.Set;
-
-public class PurniteIngot extends Item {
-    private static final Logger LOGGER = LogManager.getLogger();
-
-
-    public PurniteIngot(Properties properties) {
-        super(properties.stacksTo(64)
-            .fireResistant()
-            .rarity(Rarity.UNCOMMON)
-            .tab(CreativeModeTab.TAB_MATERIALS)
-        );
+public class PurniteIngot extends Item
+{
+    private static final Logger LOGGER;
+    
+    public PurniteIngot(final Item.Properties properties) {
+        super(properties.stacksTo(64).fireResistant().rarity(Rarity.UNCOMMON).tab(CreativeTabs.TAB_HOLLOW_PURPLE));
     }
-
+    
     @SubscribeEvent
-    public static void onItemEntitySpawn(EntityJoinWorldEvent event) {
-        if (event.getEntity() instanceof ItemEntity itemEntity) {
-            ItemStack stack = itemEntity.getItem();
+    public static void onItemEntitySpawn(final EntityJoinWorldEvent event) {
+        final Entity entity = event.getEntity();
+        if (entity instanceof ItemEntity) {
+            final ItemEntity itemEntity = (ItemEntity)entity;
+            final ItemStack stack = itemEntity.getItem();
             if (stack.getItem() instanceof PurniteIngot) {
                 itemEntity.setNoGravity(true);
             }
         }
     }
-
-    @Override
-    public boolean isFoil(ItemStack stack) {
+    
+    public boolean isFoil(final ItemStack stack) {
         return true;
+    }
+    
+    static {
+        LOGGER = LogManager.getLogger();
     }
 }
