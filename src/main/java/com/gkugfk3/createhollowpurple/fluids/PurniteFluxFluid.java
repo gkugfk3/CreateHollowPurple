@@ -3,14 +3,14 @@ package com.gkugfk3.createhollowpurple.fluids;
 import net.minecraft.world.level.block.LiquidBlock;
 import com.gkugfk3.createhollowpurple.block.ModBlocks;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.material.FlowingFluid;
+import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraft.sounds.SoundEvents;
 import com.gkugfk3.createhollowpurple.item.ModItems;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.properties.Flowing;
 
 public abstract class PurniteFluxFluid extends ForgeFlowingFluid {
 
@@ -50,12 +50,12 @@ public abstract class PurniteFluxFluid extends ForgeFlowingFluid {
         @Override
         protected void createFluidStateDefinition(final StateDefinition.Builder<Fluid, FluidState> builder) {
             super.createFluidStateDefinition(builder);
-            builder.add(Flowing.LEVEL); // Add the LEVEL property for flowing fluid
+            builder.add(FlowingFluid.LEVEL); // Add the LEVEL property for flowing fluid // error 3
         }
 
         @Override
         public int getAmount(final FluidState state) {
-            return state.getValue(Flowing.LEVEL); // Flow level 1-7
+            return state.getValue(FlowingFluid.LEVEL); // Flow level 1-7 // error 4
         }
 
         @Override

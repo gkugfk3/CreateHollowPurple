@@ -18,7 +18,7 @@ import java.util.Random;
 public class PurniteFluxFluidBlock extends LiquidBlock {
 
     public PurniteFluxFluidBlock() {
-        super(() -> ModFluids.PURNITE_FLOWING.get(), BlockBehaviour.Properties
+        super(() -> (FlowingFluid) ModFluids.PURNITE_FLOWING.get(), BlockBehaviour.Properties
                 .of(Material.WATER, MaterialColor.COLOR_PURPLE)
                 .strength(100.0F));
     }

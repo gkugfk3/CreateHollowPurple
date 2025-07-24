@@ -9,6 +9,6 @@ import net.minecraft.core.*;
 public class PurniteCasingBlock extends Block
 {
     public PurniteCasingBlock() {
-        super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.METAL).strength(3.75f, 300.0f).lightLevel(state -> 6).noOcclusion().m_60982_((state, reader, pos) -> true).m_60991_((state, reader, pos) -> true).m_60955_()); // wtf are these mappings bro
+        super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.METAL).strength(3.75f, 300.0f).lightLevel(state -> 6).noOcclusion().hasPostProcess((state, reader, pos) -> true).requiresCorrectToolForDrops()); // wtf are these mappings bro
     }
 }
